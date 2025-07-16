@@ -2953,6 +2953,26 @@ border: none;
 @media only screen and (min-width: 640px) and (max-width: 768px) {
 }
 @media only screen and (max-width: 768px) {
+        .contactInfo {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+          }
+                    .copyRights{
+                    margin-bottom: 20px;
+                    }
+        
+          .contactInfo p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+                    .leftLinks {
+                      display: flex;
+                      gap: 14px;
+                      flex-wrap: wrap;
+                      margin-bottom: 20px;
+                    }
    .progress-header {
                 flex-direction: column;
                 align-items: flex-start;
@@ -3041,6 +3061,7 @@ border: none;
       padding: 1rem 1rem;
       border-radius: 8px;
     }
+      
 
 }
 @media only screen and (min-width: 768px) {
@@ -3070,7 +3091,7 @@ border: none;
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (max-width: 480px) {
- 
+
   .right_image {
       width: 100%;
       margin-bottom: 20px;
