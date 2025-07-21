@@ -1188,6 +1188,11 @@ width: 12%;
 .inner-card{
  padding: 30px 20px 0px;
 }
+.inner-card img{
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+}
         /* .team-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -1210,13 +1215,13 @@ width: 12%;
         }
 
         .view-more-btn {
-           border: 1px solid #000000 !important;
+           border: 1px solid #00000033 !important;
            background-color: #ffff;
             color: #000000;
             border: none;
             padding: 6px 19px;
             border-radius: 25px;
-            font-weight: 500;
+            font-weight: 400;
             display: inline-block;
             margin-bottom: 20px;
         }
@@ -1260,7 +1265,7 @@ width: 12%;
   /* Digital  */
 .banner_digital {
     position: relative;
-    height: 250px;
+    height: 188px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/banner_digital.jpg);
 
 }
@@ -1268,7 +1273,7 @@ width: 12%;
 .mission_flex{
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .mission_flex img{
   width: 39px;
@@ -1283,21 +1288,72 @@ width: 12%;
 .mission_text p{
   font-size: 15px;
   font-weight: 400;
-  opacity: 0.7;
   color: #000000;
+}
+.core_text p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
 }
 .mission_text li {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 10px;
     opacity: 0.7;
       color: #000000;
 }
 
+.core_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6px;
+  /* padding: 10px; */
+}
+.core_card {
+  height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.trust_img img{
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  }
+.trust_img {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 6px;
+    background-color: #FFFFFF26;
+}
+.trustColor{
+  background-color: #0F5680;
+
+}
+.collabColor{
+ background-color: #5FB7A0;
+}
+.enableColor{
+ background-color: #6E6E6E;
+}
+.innoColor{
+ background-color: #DBA100;
+}
+
+
+
+
 .digital_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 5px;
   /* padding: 10px; */
 }
 .what_we_do {
@@ -1394,6 +1450,8 @@ color: var(--main-color);
   position: relative;
   height: 490px;
   overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
 }
 .time_next {
   height: 100%;
@@ -1617,7 +1675,10 @@ hr{
 .left_side_list {
   list-style: none;
   padding: 0;
-  column-count: 1;
+  height: 340px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
 }
 
 .left_side_list li {
@@ -1943,7 +2004,7 @@ hr{
 
 
    .message-card {
-            padding: 1.5rem;
+           padding: 15px 20px;
             border-bottom: 1px solid #e9ecef;
               background-color: #F1F7FE;
               border-radius: 8px;
@@ -2014,6 +2075,8 @@ hr{
   padding: 0px 15px;
   margin: 0;
   column-count: 2;
+  column-gap: 30px;
+
 }
 .list_item ul li{
 
@@ -2021,6 +2084,37 @@ hr{
   color: #000000;
   font-weight: 400;
   margin-bottom: 0.5rem;
+}
+.employee_group{
+ text-align: center;
+ margin: 20px 0px;
+}
+.employee_group p{
+  font-size: 20px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+.employee_container {
+  padding: 10px 0px;
+}
+
+.employee_list {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: #f2f8fe;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #002b45;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 
@@ -2086,14 +2180,21 @@ hr{
   font-size: 16px;
   text-decoration: none;
 }
-
+.charity_title{
+  display: flex;
+  justify-content: space-between;
+}
+.givingBackLink p{
+   color: var(--main-color);
+   font-size: 15px;
+   font-weight: 600;
+}
 
 
  .employee-card {
    background-color: white;
    border-radius: 8px;
    padding: 20px;
-
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
    position: relative;
  }
@@ -2102,6 +2203,66 @@ hr{
   align-items: flex-start;
   gap: 20px;
 
+}
+.connect_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6px;
+  margin: 15px 0px;
+  /* padding: 10px; */
+}
+.connect_card{
+ height: 49px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #ffff;
+ border-radius: 10px;
+ text-transform: capitalize;
+}
+.instaColor{
+  background-color: #DB2777;
+
+}
+.fbColor{
+ background-color: #1E40AF;
+}
+.linkedinColor{
+ background-color: #2563EB;
+}
+.youTubeColor{
+ background-color: #DC2626;
+}
+.sendMsg{
+  font-size: 16px !important;
+  color: #E22D3F !important;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+}
+
+.award_card{
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8;
+  border-radius: 9px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+.award_Content{
+  margin-left: 15px;
+}
+
+
+.award_Content h3{
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.award_Content p{
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .employee-profile img{
@@ -2813,17 +2974,14 @@ border: none;
 
 /* Footer */
 .copyRights small{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  color: #ffff;
-  opacity: 0.6;
-  
+  color: #FFFFFF99;  
 }
 .leftLinks{
   display:flex ;
   gap: 40px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 .contactInfo{
   display: flex;
@@ -2837,7 +2995,14 @@ border: none;
   font-size: 16px;
     font-weight: 400;
 }
-
+.footer_height{
+  background-color: #000;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 40px;
+}
 
 
 
@@ -3097,6 +3262,18 @@ border: none;
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (max-width: 480px) {
+  .employee_list {
+    display: grid
+;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+  .connect_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6px;
+  /* padding: 10px; */
+}
   .right_image img {
      width: 100%;
     height: auto;
@@ -3111,7 +3288,6 @@ border: none;
   .left_side_list {
       list-style: none;
       padding: 0;
-      column-count: 1;
     }
 .development{
   margin-bottom: 20px;
