@@ -1516,8 +1516,13 @@ color: var(--main-color);
 .modified-column {
   width: 120px;
 }
-.right_image{
+/* .right_image{
   width: 40%;
+} */
+.right_image img{
+  width: 142px;
+  height: 85px;
+  /* object-fit: cover; */
 }
 .right_side_text h3{
   font-size: 15px;
@@ -2953,6 +2958,7 @@ border: none;
 @media only screen and (min-width: 640px) and (max-width: 768px) {
 }
 @media only screen and (max-width: 768px) {
+  
         .contactInfo {
             display: flex;
             justify-content: space-around;
@@ -3091,6 +3097,11 @@ border: none;
 @media only screen and (min-width: 480px) {
 }
 @media only screen and (max-width: 480px) {
+  .right_image img {
+     width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
 
   .right_image {
       width: 100%;
