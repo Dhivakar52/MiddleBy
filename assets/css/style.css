@@ -3140,6 +3140,18 @@ border: none;
 
 
 
+.message-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.message-content.expanded {
+  -webkit-line-clamp: unset;
+  max-height: none;
+}
 
 
 
