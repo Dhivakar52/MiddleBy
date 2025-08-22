@@ -27,6 +27,24 @@ toggleBtns.forEach((btn, index) => {
 
 
 
+// time line accordion
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const collapseElements = document.querySelectorAll('.collapse');
+            
+            collapseElements.forEach(function(element) {
+                element.addEventListener('show.bs.collapse', function() {
+                    const button = document.querySelector(`[data-bs-target="#${element.id}"]`);
+                    button.classList.remove('collapsed');
+                });
+                
+                element.addEventListener('hide.bs.collapse', function() {
+                    const button = document.querySelector(`[data-bs-target="#${element.id}"]`);
+                    button.classList.add('collapsed');
+                });
+            });
+        });
 
 
 
