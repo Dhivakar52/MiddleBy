@@ -1914,9 +1914,9 @@ hr{
   transform: translateX(-50%);
 }
 
-.one-timeline-item {
+/* .one-timeline-item {
   margin-bottom: 20px;
-}
+} */
 
 .one-timeline-dot {
   width: 16px;
@@ -1957,7 +1957,10 @@ hr{
 .one-timeline-text_Left {
   text-align: left;
 }
-
+.timeline_space{
+  padding: 10px 2px 0px;
+  margin: 10px 0px 10px;
+}
 
 
 
@@ -3331,9 +3334,14 @@ border: none;
 }
 
 
+.one-timeline ul{
+  list-style: none;
+}
 
-
-
+/* .one-timeline li p:empty::before {
+  content: "Data Updating Soon";
+  color: #999;  
+} */
 
 
 
