@@ -1834,8 +1834,17 @@ hr{
     background-position: center;
     color: white;
     padding: 10px 0px;
+    border-radius: 10px;
   }
-
+.vision_banner_one{
+    height: 289px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/vision_2.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 10px;
+  }
 
 
 .banner_para{
@@ -1883,12 +1892,13 @@ hr{
 .vision-content h3 {
   font-size: 22px;
   color: #003250;
+  font-weight: 700;
   text-align: center;
   margin: 20px 0px 3px;
 }
 .vision-content p{
   padding: 10px 29px;
-  text-align: justify;
+  text-align: center;
 }
 
 
