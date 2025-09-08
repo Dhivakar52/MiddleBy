@@ -1873,7 +1873,8 @@ hr{
 .vision_bg {
   background-color: #fff;
   padding: 42px 25px;
-  margin: 20px 0px;
+  margin: 5px 0px;
+  border-radius: 10px;
 }
 .vision-content{
   display: flex;
