@@ -3434,9 +3434,88 @@ border: none;
         }
 
        
+/* Time-Line */
 
+  .project-timeline {
+      position: relative;
+      margin: 40px auto;
+    }
 
+    .timeline-entry {
+      display: flex;
+      align-items: flex-start;
+      margin: 0px 0;
+      position: relative;
+      padding-bottom: 15px; 
+    }
 
+   
+    .timeline-entry::after {
+      content: "";
+      position: absolute;
+      left: 23%;
+      transform: translateX(-50%);
+      top: 20px; 
+      width: 6px;
+      height: calc(100% - 5px);
+      background: currentColor;
+      border-radius: 3px;
+      z-index: 1;
+    }
+
+    
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: 23%;
+      transform: translateX(-50%);
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid white;
+      background: currentColor;
+      box-shadow: 0 0 0 2px currentColor;
+      z-index: 2;
+    }
+
+   
+    .entry-year {
+      width: 25%;
+      text-align: right;
+      padding-right: 30px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+   
+    .entry-details {
+      width: 75%;
+      padding-left: 30px;
+    }
+
+   
+    .color-2024 ,.color-2024 > .entry-details span {
+      color: #0275d8; 
+    }
+    .color-2025,.color-2025 > .entry-details span {
+      color: #d9534f; 
+    }
+    .color-2026 ,.color-2026 > .entry-details span {
+      color: #f0ad4e; 
+    }
+
+    .entry-month {
+      font-weight: bold;
+    }
+    .entry-details{
+      font-size: 16px;
+      color: #555;
+      margin-top: 5px;
+    }
+        .entry-details span{
+      display: block;
+    }
 
 
 
