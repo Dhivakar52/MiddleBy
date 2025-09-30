@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleby Sitemap</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <style>
+   
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-12 ">
+                 <div>
+                    <h1 class="page-heading">Middleby Sitemap</h1>
+                 </div>
+                   <div class="row">
+                     <div class="col-xl-3 col-md-6">
+                           <div>
+                     <!-- Department Section -->
+        <div class="navigation-block">
+            <div class="category-title">
+                Department
+            </div>
+            <ul class="item-collection">
+                <li class="menu-link">Accounting</li>
+                <li class="menu-link">Digital Technology</li>
+                <li class="menu-link">Communication</li>
+                <li class="menu-link">IT Admin</li>
+                <li class="menu-link">Legal</li>
+                <li class="menu-link">Supply Chain</li>
+                <li class="menu-link">Tax</li>
+            </ul>
+        </div>
+                       <!-- Leadership Section -->
+        <div class="navigation-block">
+            <div class="category-title">
+                Leadership
+            </div>
+        </div>
+
+        <!-- Mission and Values Section -->
+        <div class="navigation-block">
+            <div class="category-title">
+                Mission and Values
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div class="navigation-block">
+            <div class="category-title">
+                News
+            </div>
+        </div>
+
+        <!-- Employee Newsletter Section -->
+        <div class="navigation-block">
+            <div class="category-title">
+                Employee Newsletter
+            </div>
+        </div>
+                 </div>
+                     </div>
+                   </div>
+                
+            </div>
+            </div>
+        </div>
+    </section>
+       <!-- jQuery START -->
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+
+    <!-- jQuery END -->
+         <script>
+$(document).ready(function() {
+    $('.category-title').click(function() {
+        // toggle the next sibling list
+        $(this).next('.item-collection').slideToggle();
+    });
+});
+</script>
+</body>
+</html>
