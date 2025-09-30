@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    .timeline {
+      position: relative;
+      margin: 40px auto;
+    }
+
+    /* vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to bottom, #f0ad4e 0 20%, #d9534f 20% 100%);
+    border-radius: 3px;
+}
+
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      margin: 25px 0;
+      position: relative;
+    }
+
+    /* circles */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    transform: translateX(-50%);
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: currentColor;
+    box-shadow: 0 0 0 2px currentColor;
+    z-index: 2;
+}
+
+    /* left column (year) */
+.timeline-left {
+    width: 10%;
+    text-align: right;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 22px;
+}
+    /* right column (content) */
+    .timeline-right {
+      width: 45%;
+      padding-left: 30px;
+    }
+
+    /* year colors */
+    .year-2025 {
+      color: #d9534f;
+    }
+    .year-2026 {
+      color: #f0ad4e;
+    }
+
+    /* months */
+    .month {
+      font-weight: bold;
+    }
+    .year-2025 .month {
+      color: #d9534f;
+    }
+    .year-2026 .month {
+      color: #f0ad4e;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container">
+    <h3 class="text-center mb-5">Project Timeline</h3>
+    <div class="timeline">
+
+      <!-- 2026 -->
+      <div class="timeline-item year-2026">
+        <div class="timeline-left">2026</div>
+        <div class="timeline-right">
+          <span class="month">Jan</span> – Digital Hub India Launched
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="timeline-item year-2025">
+        <div class="timeline-left">2025</div>
+        <div class="timeline-right">
+          <span class="month">Jan</span> – Mid Res Dealer Portal
+        </div>
+      </div>
+      <div class="timeline-item year-2025">
+        <div class="timeline-left"></div>
+        <div class="timeline-right">
+          <span class="month">Feb</span> – MPC Phase 2
+        </div>
+      </div>
+      <div class="timeline-item year-2025">
+        <div class="timeline-left"></div>
+        <div class="timeline-right">
+          <span class="month">Jul</span> – MPC API Support
+        </div>
+      </div>
+      <div class="timeline-item year-2025">
+        <div class="timeline-left"></div>
+        <div class="timeline-right">
+          <span class="month">May</span> – AMI Phase 4 Launch
+        </div>
+      </div>
+      <div class="timeline-item year-2025">
+        <div class="timeline-left"></div>
+        <div class="timeline-right">
+          <span class="month">May</span> – Midd UK D365 Live
+        </div>
+      </div>
+      <div class="timeline-item year-2025">
+        <div class="timeline-left"></div>
+        <div class="timeline-right">
+          <span class="month">Aug</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
