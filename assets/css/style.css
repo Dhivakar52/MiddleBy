@@ -3289,6 +3289,11 @@ border: none;
             height: 10px;
             background-color: #333;
             border-radius: 50%;
+                background-color: #E22D3F;
+    border: 2px solid white;
+
+    position: absolute;
+    z-index: 999;
         }
         
         .timeline-item_v2::after {
@@ -3299,6 +3304,7 @@ border: none;
             width: 2px;
             height: calc(100% + 25px);
             background-color: #e9ecef;
+            
         }
         
         .timeline-item_v2:last-child::after {
@@ -3328,7 +3334,36 @@ border: none;
         .collapse {
             transition: all 0.3s ease-in-out;
         }
-      
+  
+
+.timleline_2013::before  {
+            background-color: #E22D3F; 
+                box-shadow: 0 0 0 2px #E22D3F;
+        }
+.timleline_2016::before {
+            background-color: #003250; 
+             box-shadow: 0 0 0 2px #003250;
+        }
+.timleline_2018::before {
+            background-color: #F1B612; 
+             box-shadow: 0 0 0 2px #F1B612;
+        }
+.timleline_2019::before {
+            background-color: #AA7DAC; 
+             box-shadow: 0 0 0 2px #AA7DAC;
+        }
+  .timleline_2013 .timeline-month_v2 {
+            color: #E22D3F; 
+        }       
+       .timleline_2016 .timeline-month_v2 {
+           color: #003250; 
+        }
+     .timleline_2018 .timeline-month_v2 {
+            color: #F1B612; 
+        }
+  .timleline_2019 .timeline-month_v2 {
+            color: #AA7DAC; 
+        }     
 .shoMore_btn{
   border: 1px solid var(--main-color);
   color: var(--main-color);
