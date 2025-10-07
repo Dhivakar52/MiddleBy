@@ -1829,7 +1829,7 @@ hr{
 /* Our vision */
 .vision_banner{
     height: 289px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/businessman_vision.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -2%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/businessman_vision.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1838,7 +1838,7 @@ hr{
   }
 .vision_banner_one{
     height: 289px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/vision_2.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -2%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/vision_2.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -1856,9 +1856,9 @@ hr{
 
 .vison-overlay {
   position: absolute;
-  bottom: 0;
-  left: 1rem;
-  width: 80%;
+  bottom: 13px;
+  left: 0rem;
+  width: 99%;
   padding: 1rem 1rem;
   border-radius: 8px;
 }
@@ -3234,7 +3234,7 @@ border: none;
             width: 100%;
             text-align: left;
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: bold;
             color: #333;
             cursor: pointer;
             transition: background-color 0.2s ease;
@@ -3270,11 +3270,11 @@ border: none;
             margin-bottom: 30px;
           
         }
-        .timeline_titleBg{
+        /* .timeline_titleBg{
           background-color: #fff;
           padding: 7px 15px;
           border-radius: 8px;
-        }
+        } */
         
         .timeline-item_v2:last-child {
             margin-bottom: 0;
@@ -3336,32 +3336,32 @@ border: none;
         }
   
 
-.timleline_2013::before  {
+.timleline_2013::before,.timeline_2025::before  {
             background-color: #E22D3F; 
                 box-shadow: 0 0 0 2px #E22D3F;
         }
-.timleline_2016::before {
+.timleline_2016::before, .timeline_2024::before {
             background-color: #003250; 
              box-shadow: 0 0 0 2px #003250;
         }
-.timleline_2018::before {
+.timleline_2018::before, .timeline_2022::before {
             background-color: #F1B612; 
              box-shadow: 0 0 0 2px #F1B612;
         }
-.timleline_2019::before {
+.timleline_2019::before, .timeline_2020::before {
             background-color: #AA7DAC; 
              box-shadow: 0 0 0 2px #AA7DAC;
         }
-  .timleline_2013 .timeline-month_v2 {
+  .timleline_2013 .timeline-month_v2 , .timeline_2025 .timeline-month_v2 {
             color: #E22D3F; 
         }       
-       .timleline_2016 .timeline-month_v2 {
+       .timleline_2016 .timeline-month_v2 , .timeline_2024 .timeline-month_v2 {
            color: #003250; 
         }
-     .timleline_2018 .timeline-month_v2 {
+     .timleline_2018 .timeline-month_v2 , .timeline_2022 .timeline-month_v2 {
             color: #F1B612; 
         }
-  .timleline_2019 .timeline-month_v2 {
+  .timleline_2019 .timeline-month_v2 , .timeline_2020 .timeline-month_v2 {
             color: #AA7DAC; 
         }     
 .shoMore_btn{
