@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- IE Edge Meta Tag -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Middle By</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+         <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                       <div class="form-container">
+        <h1 class="form-title">Charity & Events - Add New Creation</h1>
+        
+        <form id="eventForm">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="eventName" class="form-label">Name of the event</label>
+                    <input type="text" class="form-control focused-input" id="eventName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="eventLocation" class="form-label">Location of the event</label>
+                    <input type="text" class="form-control" id="eventLocation">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="organiserName" class="form-label">Organiser Name</label>
+                    <input type="text" class="form-control" id="organiserName">
+                </div>
+                <div class="col-md-6">
+                    <label for="gpsCoordinate" class="form-label">GPS Co-ordinate</label>
+                    <input type="text" class="form-control" id="gpsCoordinate">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <label for="eventDateTime" class="form-label">Date & Time of the event</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" class="form-control" id="eventDateTime" placeholder="Select date and time">
+                        <i class="fa fa-calendar calendar-icon"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastDate" class="form-label">Last date to enroll</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" class="form-control" id="lastDate" placeholder="Select date">
+                        <i class="fa fa-calendar calendar-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+           <div class="row">
+                <div class="col-md-6">
+                    <label class="form-label">Short Description about the event</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Enrollment type 1</label>
+                    <div class="enrollment-box">
+                        <div class="enroll_flex">
+                     <div class="enrollment-item">
+                            <p>Sponsor</p>        
+                        </div>
+                          <div>
+                            <button type="button" class="btn-icon">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        </div>
+
+
+                         <div class="enroll_flex">
+                     <div class="enrollment-item">
+                            <span>Volunteer</span>
+                        </div>
+                          <div>
+                            <button type="button" class="btn-icon">
+                                 <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                        </div>
+                       
+                      
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-6">
+                    <label class="form-label">Files</label>
+                    <div class="enrollment-item">
+                        <label for="fileUpload" class="upload-btn">
+                            Upload image
+                        </label>
+                        <input type="file" id="fileUpload" accept="image/*" style="display: none;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn-cancel">Cancel</button>
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+                 </div>
+              </div>
+         </div>
+    </section>
+
+    <!-- jQuery START -->
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+    <!-- jQuery END -->
+
+    <script></script>
+  </body>
+</html>

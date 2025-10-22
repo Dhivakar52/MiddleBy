@@ -3559,17 +3559,305 @@ border: none;
 
 
 
+.employee {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.employee li {
+  position: relative;
+  padding-left: 25px; 
+  margin-bottom: 10px; 
+  color: #333;
+}
 
 
+.employee li:before {
+  content: "\f08e"; 
+  font-family: FontAwesome; 
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--main-color); 
+
+}
+.hr_content_card {
+            background-color: #e8f0f7;
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .hr_content_card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hr_content_avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #9ca3af;
+            margin-right: 20px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hr_content_avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hr_content_avatar_placeholder {
+            background: linear-gradient(135deg, #94a3b8 0%, #64748b 100%);
+        }
+        
+        .hr_content_info {
+            flex-grow: 1;
+        }
+        
+        .hr_content_name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000CC;
+            margin-bottom: 4px;
+        }
+        
+        .hr_content_title {
+           font-size: 15px;
+            color: #00000099;
+            margin: 0;
+        }
 
 
+ .modal-content {
+            border-radius: 12px;
+            border: none;
+        }
+
+        .modal-header {
+            background-color: white;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 30px;
+        }
+
+        .modal-title {
+            color: #003250;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .btn-close {
+            font-size: 12px;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .form-label {
+            color: #374151;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .form-control, .form-select {
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 10px 15px;
+            font-size: 0.95rem;
+        }
+
+        .form-control:focus, .form-select:focus {
+            background-color: white;
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+        }
+
+        .modal-footer {
+            border-top: 0px solid #e5e7eb;
+            padding: 20px 30px;
+            gap: 10px;
+        }
+
+        .btn-add-creation {
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-add-creation:hover {
+            background-color: #E22D3F;
+            color: white;
+        }
+
+        .btn-cancel {
+            background-color: #E3ECF2;
+            color: #003250;
+            border: 1px solid #cbd5e1;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cancel:hover {
+            background-color: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        .btn-submit {
+            background-color: #003250;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #1e40af;
+        }
+
+.form-container{
+  background-color: #ffff;
+  padding: 20px 25px;
+  margin: 20px 20px;
+  border-radius: 9px;
+}
+.form-title{
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 0.5px solid #0000004D;
+  padding: 10px 0px;
+  margin: 10px 0px 20px;
+}
 
 
+#eventForm .form-label{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+}
 
+  .date-input-wrapper {
+            position: relative;
+        }
+        .date-input-wrapper .calendar-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+            pointer-events: none;
+        }
+   .enrollment-box {
+            background-color: white;
+            border: none;
+            padding: 0;
+        }
+        .enroll_flex{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
+        .enrollment-item {
+          flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            background-color: #F8F8F8;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .enrollment-item:last-child {
+            margin-bottom: 0;
+        }
+        .enrollment-item span {
+            font-size: 14px;
+            color: #333;
+        }
 
-
-
-
+         .btn-icon {
+            background: #FFF1F1;
+            border: none;
+            color: #E22D3F;
+            font-size: 20px;
+            padding: 0;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            margin: 0px 0px 0px 10px;
+        }
+        .btn-icon:hover {
+            color: #bb2d3b;
+        }
+        
+        .btn-enrollment.remove {
+            color: #dc3545;
+        }
+        .upload-btn {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .upload-btn:hover {
+            background-color: #e9ecef;
+        }
+        .btn-cancel {
+            background-color: #e9ecef;
+            color: #333;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .btn-submit {
+            background-color: #004d66;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .btn-submit:hover {
+            background-color: #003d52;
+        }
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 30px;
+        }
 
 
 
