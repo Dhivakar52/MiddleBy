@@ -3859,7 +3859,25 @@ border: none;
         }
 
 
-
+        .page-item.active .page-link {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+        }
+ .page-link {
+  color: #000;
+  margin: 6px 10px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px !important;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
 
 
