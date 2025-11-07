@@ -3881,12 +3881,168 @@ border: none;
 
 
 
+.team-member-card {
+            background: white;
+            border-radius: 12px;
+            padding: 0;
+            margin: 10px 0px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .team-member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .member-info {
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        .member-name {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        .member-title {
+            font-size: 15px;
+            color: #00000080;
+            margin-bottom: 15px;
+        }
+
+        .member-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 500;
+            background: var(--main-color);
+            color: #fff;
+        }
+
+        /* .badge-birthday {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .badge-anniversary {
+            background-color: #198754;
+            color: white;
+        } */
+
+        .owl-theme .owl-dots .owl-dot span {
+            background: #ccc;
+            width: 10px;
+            height: 10px;
+            margin: 5px 3px;
+        }
+
+       .team-carousel .owl-dots .owl-dot.active span {
+            background: var(--main-color);
+        }
+
+        .team-carousel , .owl-theme .owl-nav {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .owl-theme .owl-nav button {
+            background: #0d6efd !important;
+            color: white !important;
+            font-size: 24px !important;
+            padding: 5px 15px !important;
+            border-radius: 5px !important;
+        }
+
+        .owl-theme .owl-nav button:hover {
+            background: #0b5ed7 !important;
+        }
+
+       .menu-card {
+            background: #f0f4f8;
+            border: none;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+.menu-card {
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* When hovering over the whole card */
+.menu-card:hover {
+    background: var(--main-color);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.menu-card:hover .menu-icon,
+.menu-card:hover .menu-title {
+    color: #fff;
+}
 
 
 
 
+        .menu-icon {
+            font-size: 20px;
+            color: #000000;
+            margin-bottom: 15px;
+        }
 
+        .menu-title {
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            margin: 0;
+        }
 
+.newsletterImg {
+  height: 390px;
+  overflow-y: scroll;   
+  border: 1px solid #000000;
+  border-radius: 20px;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+  margin-bottom: 20px;
+}
+
+.newsletterImg::-webkit-scrollbar {
+  display: none; 
+}
+.blue_bg{
+  display: flex;
+  justify-content: center;
+}
+.blue_bg .page-item.active .page-link {
+    background-color: var(--main-color);
+    border-color: transparent;
+    box-shadow: none;
+}
 
 
 

@@ -1,4 +1,37 @@
-$(document).ready(function () {});
+$(document).ready(function () {
+
+
+$('.team-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                navText: ['<', '>'],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1024: {
+                        items: 3
+                    }
+                }
+            });
+
+
+
+
+
+
+
+
+
+});
 document.addEventListener("DOMContentLoaded", function () {
   var tooltipTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="tooltip"]')
