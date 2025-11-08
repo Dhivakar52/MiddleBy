@@ -3952,7 +3952,7 @@ border: none;
             background: var(--main-color);
         }
 
-        .team-carousel , .owl-theme .owl-nav {
+        .team-carousel .owl-nav {
             margin-top: 20px;
             display: none;
         }
@@ -4028,7 +4028,7 @@ border: none;
   border-radius: 20px;
   scrollbar-width: none; 
   -ms-overflow-style: none;  
-  margin-bottom: 20px;
+  margin: 0px 4px 0px;
 }
 
 .newsletterImg::-webkit-scrollbar {
@@ -4043,6 +4043,69 @@ border: none;
     border-color: transparent;
     box-shadow: none;
 }
+
+.dish-carousel .owl-nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+.dish-carousel .owl-nav button.owl-next, .dish-carousel .owl-nav button.owl-prev{
+background: transparent !important;
+    color: black !important;
+    border: 1px solid #000;
+    font-size: 15px !important;
+    padding: 0px 7px !important;
+    border-radius: 5px !important;
+}
+.dish-carousel .owl-dots {
+ display: none;
+}
+.team-carousel-container{
+  position: relative;
+}
+.employee-month{
+position: absolute;
+    bottom: 21px;
+}
+.employee-month p{
+  border: 1px solid #00000080;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  padding: 2px 7px;
+  
+}
+.view-more-2{
+border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+.view-more-2:hover{
+background:var(--main-color);
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

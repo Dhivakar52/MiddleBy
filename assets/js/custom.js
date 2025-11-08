@@ -24,7 +24,27 @@ $('.team-carousel').owlCarousel({
             });
 
 
-
+$('.dish-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: false,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                navText: ['<', '>'],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    }
+                }
+            });
 
 
 
