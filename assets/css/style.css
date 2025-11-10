@@ -4194,24 +4194,21 @@ color: white;
 } */
 
 /* When hovering over the whole card */
-.menu-card:hover {
+.menu-card-2:hover {
     background: #E22D3F;
     color: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 
-.menu-card:hover .menu-icon,
-.menu-card:hover .menu-title {
-    color: #fff;
-}
+
 
 .menu-card-2{
   background-color: var(--main-color);
   color: #fff;
       padding: 19px 12px;
 }
-.menu-icon {
+.menu-icon-2 {
     color: #fff;
     margin-bottom: 15px;
 }
