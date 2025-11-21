@@ -4000,9 +4000,10 @@ border: none;
 }
 
 
-.menu-card:hover .menu-icon,
+.menu-card:hover .menu-icon svg path,
 .menu-card:hover .menu-title {
     color: #fff;
+    fill: #fff;
 }
 
 
@@ -4013,6 +4014,7 @@ border: none;
             color: #000000;
             margin-bottom: 15px;
         }
+
 
         .menu-title {
             font-size: 16px;
