@@ -1584,26 +1584,26 @@ color: var(--main-color);
   /* object-fit: cover; */
 }
 .right_side_text h3{
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   color: #000000;
   margin-bottom: 7px;
 }
 .textEllipse {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .right_side_text p small{
   color: #003250B2;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 }
 .right_side_text p{
   color: #000000B2;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 margin-bottom: 7px;
 }
@@ -2022,6 +2022,7 @@ hr{
    font-size: 16px;
    font-weight: 400;
    margin: 10px 0px;
+   color: #000000B2;
 }
 
 
@@ -2119,7 +2120,7 @@ hr{
   padding: 10px 0px;
 }
 .connectHeight{
-  height: 200px;
+  height: 130px;
 }
 
 .employee_list {
@@ -2178,10 +2179,10 @@ hr{
         
 
         
-.charity img{
-  width: 185px;
-  height: 155px;
-  object-fit: cover;
+.charity img {
+    width: 208px;
+    height: 189px;
+    object-fit: cover;
 }
 .charity h3{
   font-size: 18px;
@@ -2232,7 +2233,7 @@ hr{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 6px;
-  margin: 30px 0px;
+  margin: 5px 0px;
   /* padding: 10px; */
 }
 .connect_card{
@@ -3487,7 +3488,7 @@ border: none;
     .timeline-entry::after {
       content: "";
       position: absolute;
-      left: 23%;
+      left: 10%;
       transform: translateX(-50%);
       top: 20px; 
       width: 6px;
@@ -3501,7 +3502,7 @@ border: none;
     .timeline-entry::before {
       content: "";
       position: absolute;
-      left: 23%;
+      left: 10%;
       transform: translateX(-50%);
       top: 10px;
       width: 20px;
@@ -3515,7 +3516,7 @@ border: none;
 
    
     .entry-year {
-      width: 25%;
+      width: 9%;
       text-align: right;
       padding-right: 30px;
       font-weight: bold;
@@ -3527,6 +3528,11 @@ border: none;
       width: 75%;
       padding-left: 30px;
     }
+
+.timline_height {
+    height: 420px;
+    overflow-y: scroll;
+}
 
    
     .color-2024 ,.color-2024 > .entry-details span {
@@ -3948,7 +3954,7 @@ border: none;
             margin: 5px 3px;
         }
 
-       .team-carousel .owl-dots .owl-dot.active span {
+       .team-carousel .owl-dots .owl-dot.active span, .home-banner-carousel .owl-dots .owl-dot.active span {
             background: var(--main-color);
         }
 
@@ -4517,9 +4523,21 @@ color: white;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
 }
-
-
-
+.menu-container {
+    height: 350px;
+    overflow-y: auto;  
+    overflow-x: hidden;
+    padding: 0;
+}
+.digital-container {
+    height: 350px;
+    overflow-y: auto;  
+    overflow-x: hidden;
+    padding: 0;
+}
+.content-box-home_one{
+  height: 450px;
+}
 
 
 

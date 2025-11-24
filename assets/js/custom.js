@@ -47,7 +47,17 @@ $('.dish-carousel').owlCarousel({
             });
 
 
-
+$('.home-banner-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      items: 1,
+     
+    });
 
 
 
