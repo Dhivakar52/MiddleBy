@@ -1268,9 +1268,42 @@ width: 12%;
     position: relative;
     height: 188px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)), url(../images/middlebyImages/banner_digital.jpg);
-
 }
-
+.banner_ehs {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/environment.png);
+}
+.banner_account {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/Accounting.png);
+}
+.banner_corporate {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/Corporate_IT.png);
+}
+.banner_communication {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/Communication.png);
+}
+.banner_legal {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/Legal.png);
+}
+.banner_supplyChain {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/supplyChain.png);
+}
+.banner_tax {
+    position: relative;
+    height: 188px;
+    background-image: url(../images/middlebyImages/Tax.png);
+}
 .mission_flex{
   display: flex;
   align-items: center;
@@ -2410,6 +2443,7 @@ height: 100%;
    font-size: 16px;
     font-weight: 400;
   color: #374151;
+  margin: 10px 0px;
 }
 .user_bg{
   display: flex;
@@ -3513,7 +3547,34 @@ border: none;
       box-shadow: 0 0 0 2px currentColor;
       z-index: 2;
     }
+    .timeline-entry-one::after {
+      content: "";
+      position: absolute;
+      left: 23%;
+      transform: translateX(-50%);
+      top: 20px; 
+      width: 6px;
+      height: calc(100% - 5px);
+      background: currentColor;
+      border-radius: 3px;
+      z-index: 1;
+    }
 
+    
+    .timeline-entry-one::before {
+      content: "";
+      position: absolute;
+       left: 23%;
+      transform: translateX(-50%);
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid white;
+      background: currentColor;
+      box-shadow: 0 0 0 2px currentColor;
+      z-index: 2;
+    }
    
     .entry-year {
       width: 9%;
@@ -3522,6 +3583,10 @@ border: none;
       font-weight: bold;
       font-size: 22px;
     }
+       .entry-year-one {
+      width: 25%;
+    }
+
 
    
     .entry-details {
@@ -3532,6 +3597,9 @@ border: none;
 .timline_height {
     height: 420px;
     overflow-y: scroll;
+        scrollbar-width: thin;
+    scrollbar-color: var(--main-color) transparent;
+
 }
 
    
@@ -3989,7 +4057,21 @@ border: none;
             align-items: center;
             justify-content: center;
         }
-
+       .ehs-card {
+           
+            height: 150px;
+        }
+               .digital-card {
+            padding: 18px 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 /* .menu-card {
     transition: all 0.3s ease;
     text-align: center;
@@ -4524,22 +4606,37 @@ color: white;
     border-radius: 12px 12px 0 0;
 }
 .menu-container {
-    height: 350px;
+    height: 340px;
     overflow-y: auto;  
     overflow-x: hidden;
     padding: 0;
+        scrollbar-width: thin;
+    scrollbar-color: var(--main-color) transparent;
 }
 .digital-container {
-    height: 350px;
+    height: 230px;
     overflow-y: auto;  
     overflow-x: hidden;
     padding: 0;
+        scrollbar-width: thin;
+    scrollbar-color: var(--main-color) transparent;
 }
 .content-box-home_one{
   height: 450px;
 }
-
-
+.ehs_bg{
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+.ehs_title{
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--main-color);
+  padding: 10px 5px;
+  margin: 0px 0px 3px;
+}
 
 /***** Responsive CSS START *****/
 @media only screen and (min-width: 1920px) {
@@ -4628,6 +4725,9 @@ color: white;
 @media only screen and (min-width: 640px) and (max-width: 768px) {
 }
 @media only screen and (max-width: 768px) {
+  .connectHeight {
+    height: 130px;
+}
      .timeline-container_v2 {
                 padding: 10px;
             }
