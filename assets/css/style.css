@@ -728,6 +728,7 @@ color: var(--main-color);
 }
 .navbar-nav li{
   margin: 0px 10px;
+  font-size: 16px;
 }
 .nav-tabs .nav-link{
   border: 0px !important;
@@ -1273,37 +1274,37 @@ width: 12%;
 .banner_ehs {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/environment.png);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/environment.png);
 }
 .banner_account {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/Accounting.png);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/Accounting.png);
 }
 .banner_corporate {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/Corporate_IT.png);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/Corporate_IT.png);
 }
 .banner_communication {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/Communication.png);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/Communication.png);
 }
 .banner_legal {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/Legal.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)),url(../images/middlebyImages/Legal.png);
 }
 .banner_supplyChain {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/supplyChain.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)),url(../images/middlebyImages/supplyChain.png);
 }
 .banner_tax {
     position: relative;
     height: 188px;
-    background-image: url(../images/middlebyImages/Tax.png);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/Tax.png);
 }
 .mission_flex{
   display: flex;
@@ -1431,7 +1432,7 @@ width: 12%;
 
 .library-title {
 color: var(--main-color);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -2050,7 +2051,7 @@ hr{
 .home_banner_content h2{
    font-size: 20px;
    font-weight: 600;
-   margin: 10px 0px;
+   margin: 20px 0px 10px;
 }
 .home_banner_content p{
    font-size: 16px;
@@ -2061,7 +2062,7 @@ hr{
 
 
    .message-card {
-           padding: 15px 20px;
+           padding: 23px 20px;
             border-bottom: 1px solid #e9ecef;
               background-color: #F1F7FE;
               border-radius: 8px;
@@ -2225,9 +2226,9 @@ hr{
   margin-bottom: 10px;
 }
 .charity p{
-  font-size: 15px;
+  font-size: 14px;
   color: #555555;
-  text-align: justify;    
+  text-align: left;    
   margin-bottom: 10px;
 }   
 .btnJoin{
@@ -4051,6 +4052,9 @@ border: none;
        .team-carousel .owl-dots .owl-dot.active span, .home-banner-carousel .owl-dots .owl-dot.active span {
             background: var(--main-color);
         }
+        .home-banner-carousel .item{
+          margin: 20px 0px;
+        }
 
         .team-carousel .owl-nav {
             margin-top: 20px;
@@ -4077,7 +4081,7 @@ border: none;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            height: 100%;
+            height: 100px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -4141,7 +4145,7 @@ border: none;
   height: 390px;
   overflow-y: scroll;   
   border: 1px solid #00000066;
-  border-radius: 20px;
+  border-radius: 15px;
   scrollbar-width: none; 
   -ms-overflow-style: none;  
   margin: 0px 4px 0px;
@@ -4169,8 +4173,8 @@ border: none;
 background: transparent !important;
     color: black !important;
     border: 1px solid #00000066;
-    font-size: 15px !important;
-    padding: 0px 7px !important;
+    font-size: 11px !important;
+    padding: 3px 7px !important;
     border-radius: 5px !important;
     font-weight: 600;
 }
@@ -4309,13 +4313,17 @@ color: white;
         }
         
         .guideline-label {
-            font-size: 0.85rem;
-            font-weight: 500;
+            font-size: 18px;
+            font-weight: 400;
             color: #333;
             line-height: 1.3;
         }
        
+.digital_image img{
+  width: 350px;
+  height: 254px;
 
+}
 /* .menu-card {
     transition: all 0.3s ease;
     text-align: center;
@@ -4677,6 +4685,21 @@ color: white;
   color: var(--main-color);
   margin: 0px 0px 15px;
 }
+.list_news{
+  background-color: white;
+  height: 100%;
+  border-radius: 9px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /***** Responsive CSS START *****/
 @media only screen and (min-width: 1920px) {
