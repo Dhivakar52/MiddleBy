@@ -25,26 +25,27 @@ $('.team-carousel').owlCarousel({
 
 
 $('.dish-carousel').owlCarousel({
-                loop: true,
-                margin: 20,
-                nav: true,
-                dots: true,
-                autoplay: false,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                navText: ['<', '>'],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 1
-                    },
-                    1024: {
-                        items: 1
-                    }
-                }
-            });
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: true,
+    autoplay: false,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    navText: [
+        // Prev Button
+        '<span class="owl-prev-icon"><svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75 0.75L0.75 5.25L5.75 9.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>',
+        
+        // Next Button
+        '<span class="owl-next-icon"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.749906 10.4423L6.13452 5.59615L0.749906 0.75" stroke="#003250" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+    ],
+    responsive: {
+        0: { items: 1 },
+        768: { items: 1 },
+        1024: { items: 1 }
+    }
+});
+
 
 
 $('.home-banner-carousel').owlCarousel({
