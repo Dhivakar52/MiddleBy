@@ -495,6 +495,48 @@ a:hover {
   color: white;
   padding: 2rem;
 }
+.banner_1 {
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Banner_1.png');
+ 
+}
+.banner_2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Banner_2.png');
+ 
+}
+.banner_3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Banner_3.png');
+ 
+}
+.banner_4 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Banner_4.png');
+ 
+}
+
+.now_1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Now@Middleby_Banner_1.png');
+ 
+}
+.now_2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Now@Middleby_Banner_2.png');
+ 
+}
+.now_3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Now@Middleby_Banner_3.png');
+ 
+}
+.now_4 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Now@Middleby_Banner_4.png');
+ 
+}
 .banner-overlay {
   position: absolute;
   bottom: 1rem;
@@ -1281,6 +1323,11 @@ width: 12%;
     height: 188px;
     background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/Accounting.png);
 }
+.banner_employee {
+    position: relative;
+    height: 188px;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) -8%, rgba(0, 0, 0, 0.4)), url(../images/middlebyImages/employee_banner.jpg);
+}
 .banner_corporate {
     position: relative;
     height: 188px;
@@ -1484,7 +1531,10 @@ color: var(--main-color);
   padding: 20px;
   border-radius: 8px;
   position: relative;
-  height: 490px;
+
+}
+.timeline_height{
+  height: 350px;
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: var(--main-color) transparent;
@@ -1618,6 +1668,9 @@ color: var(--main-color);
   height: 85px;
   /* object-fit: cover; */
 }
+.right_side_text{
+  margin-top: 20px;
+}
 .right_side_text h3{
   font-size: 20px;
   font-weight: 600;
@@ -1640,7 +1693,7 @@ color: var(--main-color);
   color: #000000B2;
   font-size: 16px;
   font-weight: 400;
-margin-bottom: 7px;
+margin-bottom: 15px;
 }
 
 .left_image img{
@@ -4286,7 +4339,7 @@ color: white;
         
         /* Policy Cards */
         .guideline-box {
-            background-color: white;
+            background-color: #f0f4f8;
             border-radius: 8px;
             padding: 1.5rem 1rem;
             text-align: center;
@@ -4304,7 +4357,16 @@ color: white;
         .guideline-box:hover {
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transform: translateY(-2px);
+            background-color: var(--main-color);
+            color: #fff;
         }
+        .guideline-box:hover svg path {
+  fill: #fff; 
+}
+
+.guideline-box:hover .guideline-label {
+  color: #fff;
+}
         
         .guideline-box i {
             font-size: 2rem;
@@ -4663,7 +4725,7 @@ color: white;
     scrollbar-color: var(--main-color) transparent;
 }
 .digital-container {
-    height: 230px;
+    height: 220px;
     overflow-y: auto;  
     overflow-x: hidden;
     padding: 0;
