@@ -537,6 +537,69 @@ a:hover {
     url('../images/Now@Middleby_Banner_4.png');
  
 }
+.payroll {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Payroll.jpg');
+}
+.benefit {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Benefits.jpg');
+}
+.career {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Careers.jpg');
+}
+.employee_discount {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Employee_Discount.jpg');
+}
+.mvp {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/MVP.jpg');
+}
+.policies {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7)),
+    url('../images/Policies.jpg');
+}
+
+
+.milestone_2025 button , .milestone_2025 .timeline-month_v2 {
+  color: #EFAD4F !important;
+}
+.milestone_2024 button, .milestone_2024 .timeline-month_v2{
+color: #C3382B !important;
+}
+.milestone_2023 button, .milestone_2023 .timeline-month_v2{
+color: #813F84 !important;
+}
+.milestone_2022 button, .milestone_2022 .timeline-month_v2{
+color: #255E94 !important;
+}
+/* .milestone_2021 button{
+color: #EFAD4F;
+}
+.milestone_2020 button{
+color: #EFAD4F;
+}
+.milestone_2019 button{
+color: #EFAD4F;
+}
+.milestone_2018 button{
+color: #EFAD4F;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 .banner-overlay {
   position: absolute;
   bottom: 1rem;
@@ -3379,19 +3442,19 @@ border: none;
             background-color: #333;
             border-radius: 50%;
                 background-color: #E22D3F;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
     position: absolute;
     z-index: 999;
         }
         
         .timeline-item_v2::after {
-            content: '';
-            position: absolute;
-            left: 4px;
-            top: 18px;
-            width: 2px;
-            height: calc(100% + 25px);
+ content: '';
+    position: absolute;
+    left: 3px;
+    top: 18px;
+    width: 4px;
+    height: calc(100% + 31px);
             background-color: #e9ecef;
             
         }
@@ -3425,18 +3488,50 @@ border: none;
         }
   
 
-.timleline_2013::before,.timeline_2025::before  {
+            .timeline_2025::before  {
+            background-color: #EFAD4F !important;
+                box-shadow:0 0 0 2px #EFAD4F !important;
+        }
+                .timeline_2024::before {
+             background-color: #C3382B !important; 
+             box-shadow: 0 0 0 2px #C3382B !important;
+        }
+                 .timeline_2022::before {
+            background-color: #255E94 !important; 
+             box-shadow: 0 0 0 2px #255E94 !important;
+        }
+        /* LINE FOR 2025 */
+.timeline_2025.timeline-item_v2::after {
+    background-color: #EFAD4F !important;
+}
+
+/* LINE FOR 2024 */
+.timeline_2024.timeline-item_v2::after {
+    background-color: #C3382B !important;
+}
+
+/* LINE FOR 2022 */
+.timeline_2022.timeline-item_v2::after {
+    background-color: #255E94 !important;
+}
+
+
+.timleline_2013::before  {
             background-color: #E22D3F; 
                 box-shadow: 0 0 0 2px #E22D3F;
         }
-.timleline_2016::before, .timeline_2024::before {
-            background-color: #003250; 
+ 
+.timleline_2016::before {
+   background-color: #003250; 
              box-shadow: 0 0 0 2px #003250;
+          
         }
-.timleline_2018::before, .timeline_2022::before {
+
+.timleline_2018::before{
             background-color: #F1B612; 
              box-shadow: 0 0 0 2px #F1B612;
         }
+
 .timleline_2019::before, .timeline_2020::before {
             background-color: #AA7DAC; 
              box-shadow: 0 0 0 2px #AA7DAC;
