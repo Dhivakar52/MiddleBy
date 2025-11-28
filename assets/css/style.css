@@ -4848,7 +4848,29 @@ color: white;
   border-radius: 9px;
 }
 
+.timeline-entry ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.timeline-entry ul li {
+  position: relative;
+  padding-left: 24px; 
+  margin-bottom: 6px;
+}
+
+.timeline-entry ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-image: url('../images/middlebyImages/timeline_star.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
