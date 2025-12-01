@@ -4262,7 +4262,7 @@ border: none;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            height: 100%;
+            /* height: 100%; */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -4890,44 +4890,7 @@ color: white;
   background-repeat: no-repeat;
 }
 
-/* Hidden tooltip by default */
-.menu-card::after {
-  content: attr(data-title);
-  position: absolute;
-top: 60px;
-    left: 20%;
-  transform: translateX(-50%);
-  background: #000;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.25s ease;
-}
 
-/* Small arrow pointing down to the card */
-.menu-card::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent transparent #000 transparent;
-  opacity: 0;
-  transition: 0.25s ease;
-}
-
-/* Hover → show tooltip ABOVE */
-.menu-card:hover::after,
-.menu-card:hover::before {
-  opacity: 1;
-top: 60px;
-}
 
 
 
