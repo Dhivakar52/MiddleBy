@@ -4654,7 +4654,7 @@ color: white;
       margin-bottom: 1.5rem;
     }
     .benefit-tile {
-      background-color: #e8f4fd;
+      background-color: #f0f4f8;
       color: #000;
       border-radius: 8px;
       padding: 1.5rem 1rem;
@@ -4666,7 +4666,7 @@ color: white;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      border: 1px solid #d0e7f7;
+      /* border: 1px solid #d0e7f7; */
       min-height: 100px;
     }
     .benefit-tile:hover {
