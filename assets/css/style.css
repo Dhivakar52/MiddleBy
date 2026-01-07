@@ -4634,7 +4634,7 @@ color: white;
         .guide-icon-box {
             width: 40px;
             height: 40px;
-            background-color: #003d5c;
+            /* background-color: #003d5c; */
             border-radius: 6px;
             display: flex;
             align-items: center;
