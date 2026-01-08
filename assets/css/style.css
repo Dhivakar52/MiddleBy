@@ -4625,12 +4625,22 @@ color: white;
             border: 1px solid #d0e7f7;
         }
         
-        .guide-item:hover {
-            background-color: #d4ebfa;
-            transform: translateX(5px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
+.guide-item:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.guide-item:hover .guide-text {
+    color: #fff;
+}
+
+
+.guide-item:hover svg path {
+    fill: #fff;
+}
+
         .guide-icon-box {
             width: 40px;
             height: 40px;
