@@ -5057,13 +5057,28 @@ color: white;
         }
 
 
-#newsfeed{
-      height: 642px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-        scrollbar-width: thin;
-    scrollbar-color: var(--main-color) transparent;
+#newsfeed {
+  height: 642px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) transparent;
 }
+
+#newsfeed::-webkit-scrollbar {
+  width: 6px;
+}
+
+#newsfeed::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 6px;
+}
+
+#newsfeed::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
 
 /***** Responsive CSS START *****/
 @media only screen and (min-width: 1920px) {
